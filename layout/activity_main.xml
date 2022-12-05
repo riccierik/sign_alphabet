@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvGuanti"
+        android:layout_width="wrap_content"
+        android:layout_height="78dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:drawablePadding="10dp"
+        android:text="Per utilizzare ques'app è necessario utilizzare guanti di colore giallo,in alto contrasto con i colori di sfondo."
+        android:textSize="16sp"
+        app:drawableLeftCompat="@drawable/guanti" />
+
+    <TextView
+        android:id="@+id/tvIntro"
+        android:layout_width="fill_parent"
+        android:layout_height="290dp"
+        android:gravity="top|left"
+        android:textSize="24sp" />
+
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/radiog"
+            android:layout_width="88dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:onClick="onRadioButtonClickedGiallo"
+            android:text="giallo" />
+        <RadioButton
+            android:id="@+id/radiov"
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:onClick="onRadioButtonClickedVerde"
+            android:text="verde" />
+        <RadioButton
+            android:id="@+id/radiob"
+            android:layout_width="96dp"
+            android:layout_height="35dp"
+            android:onClick="onRadioButtonClickedBlu"
+            android:text="blu" />
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/bttContinua"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Continua" />
+
+</LinearLayout>
